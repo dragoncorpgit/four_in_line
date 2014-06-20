@@ -12,7 +12,6 @@ and open the template in the editor.
     <body>
         <?php
         echo 'teste';
-        
         // put your code here
         ?>
     </body>
