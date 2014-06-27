@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <div id="log"></div>
+        <div id="gameTable">
+
+        </div>
+        <script>
+            DrawGame();
+            function DrawGame() {
+                var gameTable = document.getElementById('gameTable');
+                var tableConstrutor = "<table>";
+
+                for (var line = 0; line < 6; line++) {
+
+                    tableConstrutor += "<tr>";
+                    for (var column = 0; column < 7; column++) {
+                        tableConstrutor += "<td onclick='Click(" + line + "," + column + ")'>0</td>";
+                    }
+                    tableConstrutor += "</tr>";
+                }
+                
+                tableConstrutor += "</table>";
+                gameTable.innerHTML += tableConstrutor;
+            }
+            
+            function Click (line, column) {
+            
+            alert('Line: ' + line + ' Column: ' + column);
+            }
+
+        </script>
+    </body>
+</html>
