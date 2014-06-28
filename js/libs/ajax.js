@@ -1,3 +1,5 @@
+//Response JSON
+
 function startConnection()
 {
  var xhr;
@@ -44,6 +46,7 @@ function httpRequest(str)
 
 function processResponse(response)
 {
+ response=JSON.parse(response);
  
 }
 
