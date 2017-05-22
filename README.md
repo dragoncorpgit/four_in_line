@@ -1,4 +1,5 @@
-four_in_line
+Four in line game
 ============
 
-PHP - js - Four in line 
+A game made with PHP and JS for a class about introduction of web technologies.
+
